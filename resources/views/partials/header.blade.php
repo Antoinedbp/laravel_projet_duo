@@ -6,7 +6,7 @@
 
             <div class="navbar-header">
                 
-                <a href="index.html" class="site-title yellow-text">env('APP_NAME')</a>
+                <a href="index.html" class="site-title yellow-text">{{env('APP_NAME')}}</a>
 
             </div><!-- /.navbar-header -->
 
