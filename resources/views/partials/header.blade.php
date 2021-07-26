@@ -18,7 +18,7 @@
                         <a href="blog.html">blog </a>
                     </li>
                     <li>
-                        <a href="portfolio.html">Portfolio</a>                                
+                        <a href="portfolio.html">portfolio</a>                                
                     </li>
                     <li>
                         <a href="contact.html">Contact</a>
