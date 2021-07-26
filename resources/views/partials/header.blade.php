@@ -13,7 +13,7 @@
             <div class="main-menu" id="perfect-navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="active">
-                        <a href="index.html">Home</a></li>
+                        <a href="index.html">home</a></li>
                     <li>
                         <a href="blog.html">Blog </a>
                     </li>
