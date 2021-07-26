@@ -15,7 +15,7 @@
                     <li class="active">
                         <a href="index.html">Home</a></li>
                     <li>
-                        <a href="blog.html">Blog </a>
+                        <a href="blog.html">blog </a>
                     </li>
                     <li>
                         <a href="portfolio.html">Portfolio</a>                                
