@@ -1,13 +1,12 @@
 @extends('template.welcome')
 @section('content')
 
-    @include('partialsHome.sec1')
-
-    <main id="main" class="site-main">
-        @include('partialsHome.sec2')
-        @include('partialsHome.sec3')
-        @include('partialsHome.sec4')
-        @include('partialsHome.sec5')
-        @include('partialsHome.sec6')
-    </main><!-- /.site-main -->
+@include('partials.homept1')
+   <main id="main" class="site-main">
+        @include('partials.homept2')
+        @include('partials.homept3')
+        @include('partials.homept4')
+        @include('partials.homept5')
+        @include('partials.homept6')
+        </main><!-- /.site-main -->
 @endsection
