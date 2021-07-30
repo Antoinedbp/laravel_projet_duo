@@ -38,4 +38,17 @@ class PortfolioBOController extends Controller
         $portfolio = $id;
         return view('backoffice.editPort', compact('portfolio'));
     }
+
+    public function update (Portfolio $id, Request $request) {
+        $port = $id;
+        $port->img1 = $request->img1;
+        $port->titre_small = $request->titre_small;
+        $port->description = $request->description;
+        $port->img2 = $request->img2;
+        $port->img3 = $request->img3;
+        $port->img4 = $request->img4;
+        $port->img5 = $request->img5;
+        $port->save();
+        return redirect('/');
+    }
 }

@@ -34,5 +34,14 @@ class BlogBOController extends Controller
         $blog = $id;
         return view('backoffice.editPort', compact('blog'));
     }
+
+    public function update (Blog $id, Request $request) {
+        $blog = $id;
+        $blog->titre = $request->titre;
+        $blog->img = $request->img;
+        $blog->description = $request->description;
+        $blog->save();
+        return redirect('/');
+    }
     
 }
