@@ -4,10 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class ContactController extends Controller
+class HomeBOController extends Controller
 {
-    
     public function index(){
-        return view('pages.contact');
+        return view('backoffice.home_bo');
     }
 }

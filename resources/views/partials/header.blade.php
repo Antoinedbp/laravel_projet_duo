@@ -22,7 +22,10 @@
                     </li>
                     <li>
                         <a href="{{route('contact')}}">Contact</a>
-                    </li> 
+                    </li>
+                    <li>
+                        <a href="{{route('hombo')}}">Back-office</a>
+                    </li>  
                 </ul><!-- /.navbar-nav -->
             </div><!-- /.navbar-collapse -->
             
