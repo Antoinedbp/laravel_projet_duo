@@ -1,27 +1,25 @@
+@extends('template.BO')
+@section('content')
+<h1 class="title_home">PAGES HOME</h1>
+<div class="globaleHome" >
+  <div class="globale2">
 
-    <div class="container">
-        <h1>BACK OFFICE | dashboard</h1>
-        <button>Retour vers le site</button>
-        <div class="row">
-            <div class="col-sm-6">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Modification Home</h5>
-                  <p class="card-text">CRUD HOME</p>
-                  <a href="{{route('blog')}}" class="btn btn-primary">Direction HOME</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Modification About</h5>
-                  <p class="card-text">CRUD About</p>
-                  <a href="{{route('portoflio')}}" class="btn btn-primary">Direction about</a>
-                </div>
-              </div>
-            </div>
-        </div>
-   
+    <div class="blog">
+      <h3>Modification BLOG</h3>
+      <p>CRUD BLOG</p>
+      <a href="{{route('')}}">
+      <button type="submit">DIRECTION BLOG</button>
+      </a>
     </div>
+    <div class="portfolio">
+        <h3>Modification PORFOLIO</h3>
+        <p>CRUD PORFOLIO</p>
+        <a href="{{route('portoflio')}}">
+          <button type="submit">DIRECTION PORTFOLIO</button>
+        </a>
+    </div>
+  </div>
+  
+</div>
+@endsection
 

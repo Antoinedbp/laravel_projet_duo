@@ -10889,3 +10889,32 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+
+.title_home{
+  text-align: center;
+}
+.globaleHome{
+  display: flex;
+  justify-content: center;
+  margin-top:10%;
+}
+.globale2{
+  display: flex;
+  width: 70%;
+  justify-content: space-around;
+}
+.globale2>h1,p,button{
+  margin-top:20%;
+  border-radius: 50px;
+}
+
+.blog{
+  border: 2px dotted red;
+  padding:15%;
+}
+
+.portfolio{
+  border: 2px dotted red;
+  padding:15%;
+}
+
