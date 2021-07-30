@@ -36,6 +36,6 @@ class PortfolioBOController extends Controller
 
     public function edit (Portfolio $id) {
         $portfolio = $id;
-        return view('backoffice.')
+        return view('backoffice.');
     }
 }
