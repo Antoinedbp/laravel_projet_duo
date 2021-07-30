@@ -8,9 +8,5 @@
         @include('partials.homept4')
         @include('partials.homept5')
         @include('partials.homept6')
-        
-
-
-        
-    </main><!-- /.site-main -->
+        </main><!-- /.site-main -->
 @endsection

@@ -46,10 +46,10 @@
 
                             <div class="post-content">
 
-                                <h3><a class="post-title" href="blog-post.html">Is Passion Good For Business?</a></h3>
+                                <h3><a class="post-title" href="blog-post.html">{{$item->titre}}</a></h3>
 
                                         
-                                <p class="section-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <p class="section-text"{{$item->description}}</p>
                                 
                             </div><!-- /.post-content -->
 
