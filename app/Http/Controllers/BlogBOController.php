@@ -12,5 +12,22 @@ class BlogBOController extends Controller
         return view('backoffice.blog_bo', compact('dataBlog'));
     }
 
+    public function create () {
+        return view('backoffice.createBlog');
+    }
+
+    public function store (Request $request) {
+        $newBlog = new Blog;
+        $newBlog->titre = $request->titre;
+        $newBlog->img = $request->img;
+        $newBlog->description = $request->description;
+        $newBlog->save();
+        return redirect()->back();
+    }
+
+    public function destroy (Blog $id) {
+        $id->delete();
+        return redirect()->back();
+    }
     
 }

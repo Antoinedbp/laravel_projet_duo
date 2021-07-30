@@ -24,4 +24,6 @@ Route::get('/blog', [BlogController::class, 'index'])->name('blog');
 Route::get('/contact',[ContactController::class,'index'])->name('contact');
 Route::get('/Portoflio',[PortfolioController::class,'index'])->name('portoflio');
 Route::get('/backoffice',[HomeBOController::class, 'index'])->name('hombo');
+Route::get('/blog_bo', [BlogBOController::class, 'index'])->name('blog_bo');
+Route::get('/portfolio_bo', [PortfolioBOController::class, 'index'])->name('portfolio_bo');
 
