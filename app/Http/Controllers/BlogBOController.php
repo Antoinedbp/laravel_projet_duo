@@ -29,5 +29,10 @@ class BlogBOController extends Controller
         $id->delete();
         return redirect()->back();
     }
+
+    public function edit (Blog $id) {
+        $blog = $id;
+        return view('backoffice.editPort', compact('blog'));
+    }
     
 }
