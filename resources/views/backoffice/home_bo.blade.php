@@ -7,14 +7,14 @@
     <div class="blog">
       <h3>Modification BLOG</h3>
       <p>CRUD BLOG</p>
-      <a href="{{route('')}}">
+      <a href="{{route('blog_bo')}}">
       <button type="submit">DIRECTION BLOG</button>
       </a>
     </div>
     <div class="portfolio">
         <h3>Modification PORFOLIO</h3>
         <p>CRUD PORFOLIO</p>
-        <a href="{{route('portoflio')}}">
+        <a href="{{route('portfolio_bo')}}">
           <button type="submit">DIRECTION PORTFOLIO</button>
         </a>
     </div>

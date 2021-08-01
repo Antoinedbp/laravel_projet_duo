@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Portfolio;
 use App\Models\Portoflio;
+use App\Models\Portoflios;
 use Illuminate\Http\Request;
 
 class PortfolioController extends Controller

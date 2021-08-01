@@ -18,7 +18,7 @@
                         <a href="{{route('blog_bo')}}">blog Backoffice</a>
                     </li>
                     <li>
-                        <a href="{{route('portoflio_bo')}}">portfolio Backoffice</a>                                
+                        <a href="{{route('portfolio_bo')}}">portfolio Backoffice</a>                                
                     </li>
                 </ul><!-- /.navbar-nav -->
             </div><!-- /.navbar-collapse -->
