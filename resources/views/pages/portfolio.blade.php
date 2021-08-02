@@ -1,12 +1,13 @@
 @extends('template.welcome')
 @section('content')
-@foreach ($dataPort as $item )
+
     
 
 
     <main id="main" class="site-main">
 
         <section class="site-section-small portfolio">
+            @foreach ($dataPort as $item )
 
             <div class="container">
                 <h1 class="section-title-big text-center">{{($item->titre)}}</h1>
@@ -210,6 +211,7 @@
                         </a>
                     </div><!-- /.col-lg-fifth  -->
 
+                    @endforeach
             	</div><!-- /#grid -->
 
             </div>
@@ -245,5 +247,5 @@
         </section><!-- /.social-networks -->
 
     </main><!-- /.site-main -->
-    @endforeach
+   
 @endsection

@@ -3,21 +3,24 @@
 namespace App\Http\Controllers;
 
 use App\Models\Portfolio;
+use App\Models\Portoflio;
+use App\Models\Portoflios;
 use Illuminate\Http\Request;
 
 class PortfolioBOController extends Controller
 {
     public function index(){
-        $dataPort = Portfolio::all();
-        return view('backoffice.portfolio_bo', compact('dataPort'));
+        
+        $dataPort = Portoflio::all();
+        return view('backoffice.portfolio_bo', compact('dataPort',));
     }
 
     public function create () {
-        return view('backoffice.createBlog');
+        return view('backoffice.createPort');
     }
 
     public function store (Request $request) {
-        $newPort = new Portfolio;
+        $newPort = new Portoflio();
         $newPort->img1 = $request->img1;
         $newPort->titre_small = $request->titre_small;
         $newPort->description = $request->description;
@@ -26,20 +29,21 @@ class PortfolioBOController extends Controller
         $newPort->img4 = $request->img4;
         $newPort->img5 = $request->img5;
         $newPort->save();
-        return redirect()->back();
+        return redirect()->route('portfolio_bo');
     }
 
-    public function destroy (Portfolio $id) {
+    public function destroy (Portoflio $id) {
         $id->delete();
         return redirect()->back();
     }
 
-    public function edit (Portfolio $id) {
+    public function edit (Portoflio $id) {
         $portfolio = $id;
-        return view('backoffice.editPort', compact('portfolio'));
+        $dataPort = Portoflio::all();
+        return view('backoffice.editPort', compact('portfolio','dataPort'));
     }
 
-    public function update (Portfolio $id, Request $request) {
+    public function update (Portoflio $id, Request $request) {
         $port = $id;
         $port->img1 = $request->img1;
         $port->titre_small = $request->titre_small;

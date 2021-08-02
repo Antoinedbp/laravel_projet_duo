@@ -1,7 +1,7 @@
-@extends('template.welcome')
+@extends('template.BO')
 
 @section('content')
-    <form action="{{route('storeArticle')}}" method="POST">
+    <form action="{{route('storeBlog')}}" method="POST">
         @csrf
         <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label">Titre</label>
@@ -13,7 +13,7 @@
         </div>
         <div class="mb-3">
         <label for="exampleInputPassword1" class="form-label">Image</label>
-        <input type="text" name="image" class="form-control" id="exampleInputPassword1">
+        <input type="text" name="img" class="form-control" id="exampleInputPassword1">
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>

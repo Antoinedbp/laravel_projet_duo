@@ -7,9 +7,10 @@ use Illuminate\Http\Request;
 
 class BlogBOController extends Controller
 {
-    public function index(){
+    public function index(Blog $id){
         $dataBlog = Blog::all();
-        return view('backoffice.blog_bo', compact('dataBlog'));
+       $blog = $id;
+        return view('backoffice.blog_bo', compact('blog', 'dataBlog'));
     }
 
     public function create () {
@@ -22,7 +23,7 @@ class BlogBOController extends Controller
         $newBlog->img = $request->img;
         $newBlog->description = $request->description;
         $newBlog->save();
-        return redirect()->back();
+        return redirect()->route('blog_bo');
     }
 
     public function destroy (Blog $id) {
@@ -31,8 +32,9 @@ class BlogBOController extends Controller
     }
 
     public function edit (Blog $id) {
+        $dataBlog = Blog::all();
         $blog = $id;
-        return view('backoffice.editPort', compact('blog'));
+        return view('backoffice.editBlog', compact('blog','dataBlog'));
     }
 
     public function update (Blog $id, Request $request) {

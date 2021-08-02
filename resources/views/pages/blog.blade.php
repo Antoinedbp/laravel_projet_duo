@@ -1,6 +1,6 @@
 @extends('template.welcome')
 @section('content')
-@foreach ($dataBlog as $item )
+
     
 
     <main id="main" class="site-main">
@@ -8,18 +8,18 @@
         <section class="site-section-small section-blog">
 
             <div class="container">
-
                 <div class="text-center">
-
+                    
                     <h1 class="section-title-big">Blog</h1>
-                    <p class="section-text">{{$item->description}}</p>
-                
+                    <p class="section-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi quis tempore explicabo molestias consequuntur rerum saepe, ex repellendus alias, nemo officiis dolores magnam temporibus excepturi suscipit itaque at qui impedit?</p>
+                    
                 </div>
-
+                
                 <ol class="breadcrumb">
                     <li><a href="index.html">Home</a></li>
                     <li class="active">Blog</li>
                 </ol><!-- /.breadcrumb -->
+                @foreach ($dataBlog as $item )
 
                 <div class="row">
 
@@ -49,7 +49,7 @@
                                 <h3><a class="post-title" href="blog-post.html">{{$item->titre}}</a></h3>
 
                                         
-                                <p class="section-text"{{$item->description}}</p>
+                                <p class="section-text">{{$item->description}}</p>
                                 
                             </div><!-- /.post-content -->
 
@@ -58,8 +58,8 @@
 
                     </div>
                 </div>
+                @endforeach   
             </div>
-            
         </section><!-- /.section-blog -->
 
         <section class="social-networks">
@@ -80,5 +80,5 @@
         </section><!-- /.social-networks -->
 
     </main><!-- /.site-main -->
-@endforeach
+
 @endsection
