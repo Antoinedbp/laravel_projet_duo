@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class BlogBOController extends Controller
 {
     public function index(Blog $id){
-        $dataBlog = Blog::all();
+        $dataBlog = Blog::all()->take(4);
        $blog = $id;
         return view('backoffice.blog_bo', compact('blog', 'dataBlog'));
     }

@@ -14,7 +14,10 @@
     <div class="globaleProduct">
         
         @foreach ($dataBlog as $item)
-        <div class="maDiv">
+           
+                
+            
+            <div class="maDiv">
             <p>titre:{{$item->titre}}</p>
             <p>lien image:{{$item->img}}</p>
             <p>description:{{$item->description}}</p>
@@ -31,6 +34,7 @@
                     </a>
                 </div>
         </div>
+        
         @endforeach
     </div>
 

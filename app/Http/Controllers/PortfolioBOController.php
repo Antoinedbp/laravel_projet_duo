@@ -11,7 +11,7 @@ class PortfolioBOController extends Controller
 {
     public function index(){
         
-        $dataPort = Portoflio::all();
+        $dataPort = Portoflio::all()->take(15);
         return view('backoffice.portfolio_bo', compact('dataPort',));
     }
 
