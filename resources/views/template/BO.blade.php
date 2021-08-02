@@ -50,7 +50,7 @@
 </head>
 <body>
     {{-- @include('partials.navBO') --}}
-    @include('partials.navBO')
+    {{-- @include('partials.navBO') --}}
     @yield('content')
     
 

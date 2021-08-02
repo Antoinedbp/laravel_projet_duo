@@ -1,6 +1,9 @@
 @extends('template.BO')
 @section('content')
 <h1 class="title_home">PAGE HOME</h1>
+<a href="{{route('home')}}">
+  <button type="submit">RETOUR VERS LE SITE</button>
+</a>
 <div class="globaleHome" >
   <div class="globale2">
 
