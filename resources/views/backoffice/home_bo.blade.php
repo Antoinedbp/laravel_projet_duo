@@ -1,6 +1,6 @@
 @extends('template.BO')
 @section('content')
-<h1 class="title_home">PAGES HOME</h1>
+<h1 class="title_home">PAGE HOME</h1>
 <div class="globaleHome" >
   <div class="globale2">
 
