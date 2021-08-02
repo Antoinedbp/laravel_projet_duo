@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <title>Contact Us | BusinessPerfect</title>
+    
 
     <meta name="description" content="BusinessPerfect - Freebie HTML/CSS template based on Bootstrap">
     <meta name="author" content="Milan Savov">
