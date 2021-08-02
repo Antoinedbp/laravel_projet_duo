@@ -6,20 +6,21 @@
 
             <div class="navbar-header">
                 
-                <a href="index.html" class="site-title yellow-text">{{env('APP_ENTREPRISE')}}</a>
+                <a href="index.html" class="site-title yellow-text" style="color:black;">{{env('APP_ENTREPRISE')}}</a>
 
             </div><!-- /.navbar-header -->
 
-            <div class="main-menu" id="perfect-navbar-collapse">
-                <ul class="nav navbar-nav navbar-right">
+            <div class="main-menu "  id="perfect-navbar-collapse">
+                <ul class="nav navbar-nav navbar-right d-flex">
                     <li class="active">
-                        <a href="{{route('hombo')}}">Home Backoffice</a></li>
+                        <a href="{{route('hombo')}}" style="color:black;">home back-office</a></li>
                     <li>
-                        <a href="{{route('blog_bo')}}">blog Backoffice</a>
+                        <a href="{{route('blog_bo')}}" style="color:black;">blog</a>
                     </li>
                     <li>
-                        <a href="{{route('portfolio_bo')}}">portfolio Backoffice</a>                                
+                        <a href="{{route('portfolio_bo')}}" style="color:black;">portfolio</a>                                
                     </li>
+                   
                 </ul><!-- /.navbar-nav -->
             </div><!-- /.navbar-collapse -->
             
